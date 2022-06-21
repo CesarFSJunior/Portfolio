@@ -243,6 +243,11 @@ main article p {
   width: 350px;
   border-radius: 20px;
   background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-size: 24px;
 }
 #projetos .card-body img {
   height: 200px;
