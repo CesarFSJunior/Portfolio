@@ -8,6 +8,8 @@
     <title>Cesar | Portfólio</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="efeitosCss.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
 </head>
 
 <body>
@@ -29,11 +31,14 @@
                 <a href="#main">
                     <li>Home</li>
                 </a>
-                <a href="">
+                <a href="#sobre-mim">
                     <li>Sobre mim</li>
                 </a>
-                <a href="">
+                <a href="#projetos">
                     <li>Projetos</li>
+                </a>
+                <a href="#contato">
+                    <li>Contato</li>
                 </a>
             </ul>
         </nav>
@@ -47,12 +52,64 @@
             <hr>
             <p>Neste Portfólio feito apenas com HTML CSS e JS vocês poderão acompanhar um pouco do meu trabalho e estudos como desenvolvedor</p>
         </article>
-        
-        <article>
 
+        <article id="sobre-mim">
+            <div class="reveal">
+                <img src="imgs/eu.jpeg" alt="Eu" id="minhaFoto">
+                <div>
+                    <h2>Sobre Mim</h2>
+                    <small>São Paulo, Sp</small>
+                    <p>Meu nome é Cesar, tenho 18 anos, atualmente estudo ciências da computação, estou ainda no 2º Periodo.</p>
+                    <p>Estou a procura da minha primeira oportunidade como desenvolvedor, mas ainda assim estudando ao maximo html, css, js e node.</p>
+                </div>
+            </div>
         </article>
 
+        <article id="projetos">
+            <div class="reveal">
+                <ul>
+                    <li onclick="projetoChange('projetos-card-front')">Front-End</li>
+                    <li onclick="projetoChange('projetos-card-back')">Back-End</li>
+                </ul>
+                <div class="projetos-card" id="projetos-card-front">
+                    <a href="https://cesarfsjunior.github.io/TrabalhoPWR">
+                        <div class="card-body"><img src="imgs/TrabalhoPwr.png" alt="TrabalhoPwr">
+                    </div></a>
+                    <div class="card-body"></div>
+                    <div class="card-body"></div>
+                    <div class="card-body"></div>
+                </div>
+                <div class="projetos-card" id="projetos-card-back">
+                    <div class="card-body"></div>
+                    <div class="card-body"></div>
+                    <div class="card-body"></div>
+                    <div class="card-body"></div>
+                </div>
+                
+            </div>
+        </article>
 
+        <article id="contato">
+            <div class="reveal">
+                <h2>Contato: </h2>
+                    <p id="email">email: cesarfsjunior@hotmail.com</p>
+                <div id="contatoLinks">
+
+                    <a href="https://github.com/CesarFSJunior">
+                        <div id="Github" class="button">
+                        <i class="devicon-github-original"></i>
+                            github</div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/cesar-francisco-80562b23a/">
+                        <div id="Linkedin" class="button">
+                        <i class="devicon-linkedin-plain colored"></i>
+                          Linkedin</div>
+                    </a>
+
+                </div>
+            </div>
+        </article>
     </main>
 
 
