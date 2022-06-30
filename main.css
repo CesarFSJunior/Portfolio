@@ -34,7 +34,6 @@ header {
   z-index: 2;
 }
 header h1 {
-  margin-left: 20px;
   color: var(--header-color);
   font-weight: 700;
   font-size: 32px;
@@ -59,6 +58,15 @@ header ul li:hover {
 }
 header a {
   text-decoration: none;
+}
+header #logoPrincipal {
+  margin-left: 20px;
+  display: flex;
+  gap: 10px;
+}
+header #logoPrincipal img {
+  height: 40px;
+  width: 40px;
 }
 header.aparece {
   height: auto;
@@ -325,6 +333,9 @@ main article p {
          column-gap: 40px;
   }
   header h1 {
+    display: none;
+  }
+  header #logoPrincipal img {
     position: fixed;
     top: 15px;
   }

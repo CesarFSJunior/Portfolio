@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Roboto:ital,wght@0,700;1,400&display=swap');
+
 :root {
     --bg: #020a1b;
-    --color: #ffffff; 
+    --color: #ffffff;
     --header-bg: #062035;
     --header-color: #fff;
-    
+
 }
 
 * {
@@ -35,7 +36,6 @@ header {
     z-index: 2;
 
     & h1 {
-        margin-left: 20px;
         color: var(--header-color);
         font-weight: 700;
         font-size: 32px;
@@ -65,6 +65,17 @@ header {
 
     & a {
         text-decoration: none;
+    }
+
+    #logoPrincipal {
+        margin-left: 20px;
+        display: flex;
+        gap: 10px;
+
+        & img {
+            height: 40px;
+            width: 40px;
+        }
     }
 
     &.aparece {
@@ -160,6 +171,7 @@ main article {
     & h2 {
         font-size: 30px;
     }
+
     & p {
         font-size: 20px;
         font-weight: 400;
@@ -181,6 +193,7 @@ main article {
         font-weight: 300;
         font-size: 55px;
     }
+
     & p {
         font-size: 18px;
         margin-bottom: 30px;
@@ -192,20 +205,21 @@ main article {
     filter: blur(1px);
     transition: 1s;
     position: relative;
+
     &:hover {
         filter: blur(0px);
     }
 }
 
 #sobre-mim {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     padding-right: 20px;
- 
-    & > div{
+
+    &>div {
 
         display: flex;
         justify-content: center;
@@ -214,11 +228,12 @@ main article {
         padding-right: 20px;
         perspective: 2px;
 
-    & > div {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }}
+        &>div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
 
     & small {
         font-size: 16px;
@@ -230,8 +245,8 @@ main article {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    & > div { 
+
+    &>div {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -246,7 +261,7 @@ main article {
             font-size: 32px;
             cursor: pointer;
 
-            & li::after{
+            & li::after {
                 content: '';
                 display: block;
                 width: 0%;
@@ -262,7 +277,7 @@ main article {
         }
     }
 
-    & .projetos-card { 
+    & .projetos-card {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -280,7 +295,7 @@ main article {
         align-items: center;
         color: #000000;
         font-size: 24px;
-        
+
         & img {
             height: 200px;
             width: 350px;
@@ -305,11 +320,11 @@ main article {
         display: flex;
         gap: 50px;
         margin-top: 20px;
-        
+
         & a {
             text-decoration: none;
         }
-            
+
     }
 }
 
@@ -335,7 +350,7 @@ main article {
 #Github {
     border: solid 3px #8b0585;
     transition: 0.5s;
-    
+
     &:hover {
         box-shadow: 0px 0px 10px #8b0585;
 
@@ -377,6 +392,10 @@ main article {
         column-gap: 40px;
 
         & h1 {
+            display: none;
+        }
+
+        & #logoPrincipal img {
             position: fixed;
             top: 15px;
         }
@@ -427,11 +446,11 @@ main article {
         padding-bottom: 240px;
     }
 
-    #sobre-mim div{
+    #sobre-mim div {
         flex-direction: column-reverse;
         justify-content: center;
         padding: 0 40px;
-        
+
 
         & div {
             justify-content: center;
@@ -440,7 +459,7 @@ main article {
         }
     }
 
-    #minhaFoto{
+    #minhaFoto {
         filter: blur(0px);
     }
 
