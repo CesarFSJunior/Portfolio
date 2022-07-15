@@ -8,6 +8,7 @@ const headerNavHeight = (headerNavLength * 49) + 68
 const projetosCard = document.querySelectorAll('.projetos-card')
 const frontEnd = document.querySelector('#projetos-card-front')
 const backEnd = document.querySelector('#projetos-card-back')
+const reveal = document.querySelectorAll('.reveal')
 
 menuMobileCheckbox.addEventListener('change', () => {
     header.style.height = `${headerNavHeight}px`
@@ -49,7 +50,7 @@ var scrollYAntigoAtualizado = ''
 document.addEventListener('scroll', () => {
     
     window.innerHeight
-    const logo = document.querySelector("#logo")
+    const logo = document.querySelector("#logoPrincipal")
     
     if(window.innerWidth < 900) {
 
@@ -79,19 +80,17 @@ document.addEventListener('scroll', () => {
     }
     scrollYAntigo = scrollY
 
-    var aparece = document.querySelectorAll('.reveal')
-
     
-    for (let i = 0; i < aparece.length; i++) {
+    for (let i = 0; i < reveal.length; i++) {
         
         var windowHeight = window.innerHeight
-        var altura = aparece[i].getBoundingClientRect().top
+        var altura = reveal[i].getBoundingClientRect().top
         var apearPoint = 200
 
         if(altura < windowHeight - apearPoint) {
-            aparece[i].classList.add('apear')
+            reveal[i].classList.add('apear')
         }else {
-            aparece[i].classList.remove('apear')
+            reveal[i].classList.remove('apear')
         }
      }
     
@@ -118,3 +117,9 @@ for (let i = 0; i < projetosCard.length; i++) {
         projetosCard[i].style.display = "none"
     }
 }
+
+ for(let i = 0; i < reveal.length; i++) {
+    reveal[i].classList.add('check')
+    console.log(reveal[i])
+}
+// console.log(reveal)
